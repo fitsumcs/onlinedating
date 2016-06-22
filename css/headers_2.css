@@ -1,0 +1,151 @@
+body {
+    width : 95%;
+    margin-left : auto;
+    margin-right : auto;
+    
+}
+#header {
+    background-color:lightblue;
+    color:white;
+    text-align:left;
+    padding:5px;
+}
+#search{
+    color:white;
+   
+    padding:5px;
+    
+    
+}
+#search input[type='text'] {
+    width: 30em;
+    height: 2.0em;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    font-weight: 560;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    text-indent: 10px;
+    margin-bottom: 2px;
+    margin-left : 10%;
+    
+}
+
+#search a,#search input[type='submit']{
+    padding: 0.48em 0.8em;
+    padding-bottom: 0.7em; 
+    margin: 0.2em 0.11em;
+    border-radius: 4px; 
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+}
+#nav {
+    line-height:30px;
+    background-color: #fafafa;
+    
+    width:180px;
+    float:left;
+    
+    height: 500px; 
+}
+
+#nav ul{
+    list-style-type: none;
+    padding : 0;
+    margin : 0; 
+    line-height: 2.5em;
+}
+#nav ul li {
+    font-size: 1.2em;
+    text-indent: 20px;
+}
+
+#nav li a,#nav li input[type="submit"]{
+    display: block;
+    width : 100%;
+    text-decoration: none;
+    padding:0.1em 0;
+    border-bottom: 1px #ededed solid;
+    
+}
+
+#nav li a:hover,#nav li input[type="submit"]:hover{
+    background-color: dodgerblue;
+    color: white;
+    
+}
+input[type='submit']:hover{
+    cursor: pointer;
+}
+#section {
+    
+    width:80%;
+    float:left;
+    padding:10px; 
+    height : 450px;
+    margin-top: 0;
+}
+
+
+#social-medias{
+	position:relative;
+    background-color: green;
+    float: right;
+    top: 70px;
+    right: 16px;
+    border-right: 1px black solid; 
+}
+
+
+#facebook {
+	display:block;
+	position: absolute;
+	top: 4px;
+	left: 0px;
+	width: 32px;
+	height: 32px;
+	background: url('../images/sprite.png') 0 0;
+	
+}
+
+#twitter {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	width: 32px;
+	height: 32px;
+	background: url('../images/sprite.png') -61px 0;
+	
+}
+
+#v {
+	display:inline-block;
+	position: absolute;
+	top: 86px;
+	left: 0px;
+	width: 32px;
+	height: 32px;
+	background: url('../images/sprite.png') -128px 0;
+	
+}
+
+#in {
+	display:inline-block;
+	position: absolute;
+	top: 128px;
+	left: 0px;
+	width: 32px;
+	height: 32px;
+	background: url('../images/sprite.png') -191px 0;
+	
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+     
+    height: 100px;
+}

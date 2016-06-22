@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Online Dating System </title>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="dating" /> <!-- keywords not finished -->
+        <meta name="description" content="Online Dating System" /> <!-- description not finished -->
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        
+        <link rel="stylesheet" href="css/welcome_2.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/signup.css">
+        <script src="js/formPopUp.js"></script>
+        
+        <!-- head not finished -->
+    
+    </head>
+    
+<body>
+    
+    <header>
+        <img src="images/love-icon.jpg" alt="logo" id="logout"/>
+        <div style="float: left;margin-left: 4em;line-height: 4px;width: 32em">
+            <p style="font-size: 2.9em;font-family :'Blackadder ITC'"> Welcome to Ketero Website</p>
+            <p style="font-size: 1.5em; font-family :  serif"> Ethiopians’ Great Online Dating Site</p>
+            <p style="font-size: 1.889em; font-family :  serif ; margin-left : 6em; color : orange;"> 
+                 Find your soulmate !  </p>
+           
+        </div>
+
+        <div style="position:relative;top:7em;float:right;">
+                <button class="button" onclick="displayForm('signup-form')"> Join&nbsp;Now </button>
+                <button class="button" onclick="displayForm('login-form')">
+                    <a href="index.html" style="text-decoration: none;color: white;"> Log In </a></button>
+        </div>   
+       
+    </header>
+    
+    <div style="width:82%;margin: 0 auto;height:430px;background-color:white;box-shadow: .3em .3em .5em #999;">
+
+			<p style="font-size:2.5em;font-family:'Blackadder ITC';text-align:center;margin:0;padding:0 0 8px;">sign up</p>    
+    <form action="php/signup.php" method="post" enctype="multipart/form-data">
+  			<div class="col-4">
+	        <label>
+	          Email Address 
+	          <input placeholder="your email" type="email" name="email" min="5" />
+	        </label>
+	      </div>
+				<div class="col-3">
+	        <label>
+	          Password 
+	          <input placeholder="your password" type="password" name="password"/>
+	        </label>
+	      </div>
+				<div class="col-2">
+	      	<label style="float:left">
+	      		<span class="radio-label">Male</span>
+	      		<input  type="radio"  name="gender" value="M" checked required/>
+	      	</label>
+					<label>
+	      		<span class="radio-label">Female</span>	
+	      		<input  type="radio"  name="gender" value="F" required/>
+	      	</label>
+	      </div>
+					      	      
+	      <div class="col-2">
+	        <label>
+	          Name
+	          <input placeholder="your first & last name" type="text"  name="name" tabindex="5"  required>
+	        </label>
+	      </div>
+				
+	      <div class="col-2">
+	        <label>screen name
+	        <input placeholder="what nick name do you want on the screen?" type="text" name="screenName" tabindex="10" min="4"  required>
+	        </label>
+	      </div>
+				<div class="col-3">
+	        <label>
+	          BIRTH DAY 
+	          <input placeholder="when were you born?" type="date" name="birthday" required />
+	        </label>
+	      </div>	      	      
+	      <div class="col-3">
+	        <label>
+	          PROFILE HEADLINE 
+	          <input placeholder="your message as a headline" name="profileHeadline" type="text" />
+	        </label>
+	      </div>
+	           
+	      <div class="col-4" style="padding-bottom:2.4px">
+	      <label>
+	       LOCATION
+	          <select tabindex="3" name="location">
+	            <option value = ">Abiy Addi">Abiy Addi</option>
+                <option value = ">Adama">Adama</option>
+                <option value = ">Addis Ababa" selected>Addis Ababa</option>
+                <option value = ">Addis Alem">Addis Alem</option>
+                <option value = ">Addis Zemen">Addis Zemen</option>
+                <option value = ">Adet">Adet</option>
+                <option value = ">Adigrat">Adigrat</option>
+                <option value = ">Adwa">Adwa</option>
+                <option value = ">Agaro">Agaro</option>
+                <option value = ">Akaki">Akaki</option>
+                <option value = ">Alaba">Alaba</option>
+                <option value = ">Alitena">Alitena</option>
+                <option value = ">Amba Mariam">Amba Mariam</option>
+                <option value = ">Ambo">Ambo</option>
+                <option value = ">Ankober">Ankober</option>
+                <option value = ">Arba Minch">Arba Minch</option>
+                <option value = ">Arboye">Arboye</option>
+                <option value = ">Asaita">Asaita</option>
+                <option value = ">Asella">Asella</option>
+                <option value = ">Asossa">Asosa</option>
+                <option value = ">Awasa">Awasa</option>
+                <option value = ">Awash">Awash</option>
+                <option value = ">Axum">Axum</option>
+                <option value = ">Alamata">Alamata</option>
+                <option value = "Babilla">Babille</option>
+                <option value = "Bacon">Baco</option>
+                <option value = "Badme">Badme</option>
+                <option value = "Bahir Dar">Bahir Dar</option>
+                <option value = "Bati">Bati</option>
+                <option value = "Bedele">Bedele</option>
+                <option value = "Beica">Beica</option>
+                <option value = "Bichena">Bichena</option>
+                <option value = "Bishoftu">Bishoftu</option>
+                <option value = "Bonga">Bonga</option>
+                <option value = "Bonga">Burie Damote</option>
+                <option value = "Butajira">Butajira</option>
+                <option value = "Ciro">Ciro</option>
+                <option value = "Chencha">Chencha</option>
+                <option value = "Chuahit">Chuahit</option>
+                <option value = "Chelenko">chelenko</option>
+                <option value = "Dabat">Dabat</option>
+                <option value = "Dangila">Dangila</option>
+                <option value = "Dabarq">Debarq</option>
+                <option value = "Debre Berhan">Debre Berhan</option>
+                <option value = "Debre MArqos">Debre Marqos</option>
+                <option value = "Debre Tabor">Debre Tabor</option>
+                <option value = "Debre Werq">Debre Werq</option>
+                <option value = "Debre Zebit">Debre Zebit</option>
+                <option value = "Dejen">Dejen</option>
+                <option value = "Delgi">Delgi</option>
+                <option value = "Dembidolo">Dembidolo</option>
+                <option value = "Dessie">Dessie</option>
+                <option value = "Dila">Dila</option>
+                <option value = "DilYibza (Beyeda)">DilYibza (Beyeda)</option>
+                <option value = "Dire Dawa">Dire Dawa</option>
+                <option value = "Dolo Bay">Dolo Bay</option>
+                <option value = "Dolo Odo">Dolo Odo</option>
+                <option value = "Durame">Durame</option>
+                <option value = "Finicha'a">Finicha'a</option>
+                <option value = "Fichae">Fiche</option>
+                <option value = "Finote Selam">Finote Selam</option>
+                <option value = "Freweyni">Freweyni</option>
+                <option value = "Gambela">Gambela</option>
+                <option value = "Gelemso">Gelemso</option>
+                <option value = "Ghimbi">Ghimbi</option>
+                <option value = "Ginir">Ginir</option>
+                <option value = "Goba">Goba</option>
+                <option value = "Gode">Gode</option>
+                <option value = "Gonder">Gondar</option>
+                <option value = "Gongoma">Gongoma</option>
+                <option value = "Gore">Gore</option>
+                <option value = "Gorgora">Gorgora</option>
+                <option value = "Harar">Harar</option>
+                <option value = "Hayq">Hayq</option>
+                <option value = "Holeta">Holeta</option>
+                <option value = "Hosaena">Hosaena</option>
+                <option value = "Humera">Humera</option>
+                <option value = "Imi">Imi</option>
+                <option value = "Jijiga">Jijiga</option>
+                <option value = "Jimma">Jimma</option>
+                <option value = "Jinka">Jinka</option>
+                <option value = "Kabri Dar">Kabri Dar</option>
+                <option value = "Kebri Mangest">Kebri Mangest</option>
+                <option value = "Kobo">Kobo</option>
+                <option value = "Kombolcha">Kombolcha</option>
+                <option value = "Konso">Konso</option>
+                <option value = "Kulubi">Kulubi</option>
+                <option value = "Lalibela">Lalibela</option>
+                <option value = "Limmu Genet">Limmu Genet</option>
+                <option value = "Maji">Maji</option>
+                <option value = "Maychew">Maychew</option>
+                <option value = "Mek'ele">Mek'ele</option>
+                <option value = "Mendi">Mendi</option>
+                <option value = "Metemma">Metemma</option>
+                <option value = "Metu">Metu</option>
+                <option value = "Mizan Teferi">Mizan Teferi</option>
+                <option value = "Mojo">Mojo</option>
+                <option value = "Mota">Mota</option>
+                <option value = "Moyale">Moyale</option>
+                <option value = "Negash">Negash</option>
+                <option value = "Negele Boran">Negele Boran</option>
+                <option value = "Nekemte">Nekemte</option>
+                <option value = "Shashamane">Shashamane</option>
+                <option value ="Shire">Shire</option>
+                <option value = "Shilavo">Shilavo</option>
+                <option value = "Sodo">Sodo</option>
+                <option value = "Sodore">Sodore</option>
+                <option value = "Sokoru">Sokoru</option>
+                <option value = "Tefki">Tefki</option>
+                <option value = "Tenta">Tenta</option>
+                <option value ="Tiya">Tiya</option>
+                <option value = "Tullu Melki">Tullu Melki</option>
+                <option value = "Turmi">Turmi</option>
+                <option value = "Wacca">Wacca</option>
+                <option value = "Walwal">Walwal</option>
+                <option value = "Werder">Werder</option>
+                <option value = "Wereta">Wereta</option>
+                <option value = "Woldia">Woldia</option>
+                <option value = "Wolaita Sodo">Wolaita Sodo </option>
+                <option value = "Waliso">Waliso</option>
+                <option value = "Wolleka">Wolleka</option>
+                <option value = "Wuchale">Wuchale</option>
+                <option value = "Ziway">Ziway</option>
+                <option value = ">Abiy Addi">Abiy Addi</option>
+                <option value = ">Adama">Adama</option>
+                <option value = ">Addis Ababa">Addis Ababa</option>
+                <option value = ">Addis Alem">Addis Alem</option>
+                <option value = ">Addis Zemen">Addis Zemen</option>
+                <option value = ">Adet">Adet</option>
+                <option value = ">Adigrat">Adigrat</option>
+                <option value = ">Adwa">Adwa</option>
+                <option value = ">Agaro">Agaro</option>
+                <option value = ">Akaki">Akaki</option>
+                <option value = ">Alaba">Alaba</option>
+                <option value = ">Alitena">Alitena</option>
+                <option value = ">Amba Mariam">Amba Mariam</option>
+                <option value = ">Ambo">Ambo</option>
+                <option value = ">Ankober">Ankober</option>
+                <option value = ">Arba Minch">Arba Minch</option>
+                <option value = ">Arboye">Arboye</option>
+                <option value = ">Asaita">Asaita</option>
+                <option value = ">Asella">Asella</option>
+                <option value = ">Asossa">Asosa</option>
+                <option value = ">Awasa">Awasa</option>
+                <option value = ">Awash">Awash</option>
+                <option value = ">Axum">Axum</option>
+                <option value = ">Alamata">Alamata</option>
+                <option value = "Babilla">Babille</option>
+                <option value = "Bacon">Baco</option>
+                <option value = "Badme">Badme</option>
+                <option value = "Bahir Dar">Bahir Dar</option>
+                <option value = "Bati">Bati</option>
+                <option value = "Bedele">Bedele</option>
+                <option value = "Beica">Beica</option>
+                <option value = "Bichena">Bichena</option>
+                <option value = "Bishoftu">Bishoftu</option>
+                <option value = "Bonga">Bonga</option>
+                <option value = "Bonga">Burie Damote</option>
+                <option value = "Butajira">Butajira</option>
+                <option value = "Ciro">Ciro</option>
+                <option value = "Chencha">Chencha</option>
+                <option value = "Chuahit">Chuahit</option>
+                <option value = "Chelenko">chelenko</option>
+                <option value = "Dabat">Dabat</option>
+                <option value = "Dangila">Dangila</option>
+                <option value = "Dabarq">Debarq</option>
+                <option value = "Debre Berhan">Debre Berhan</option>
+                <option value = "Debre MArqos">Debre Marqos</option>
+                <option value = "Debre Tabor">Debre Tabor</option>
+                <option value = "Debre Werq">Debre Werq</option>
+                <option value = "Debre Zebit">Debre Zebit</option>
+                <option value = "Dejen">Dejen</option>
+                <option value = "Delgi">Delgi</option>
+                <option value = "Dembidolo">Dembidolo</option>
+                <option value = "Dessie">Dessie</option>
+                <option value = "Dila">Dila</option>
+                <option value = "DilYibza (Beyeda)">DilYibza (Beyeda)</option>
+                <option value = "Dire Dawa">Dire Dawa</option>
+                <option value = "Dolo Bay">Dolo Bay</option>
+                <option value = "Dolo Odo">Dolo Odo</option>
+                <option value = "Durame">Durame</option>
+                <option value = "Finicha'a">Finicha'a</option>
+                <option value = "Fichae">Fiche</option>
+                <option value = "Finote Selam">Finote Selam</option>
+                <option value = "Freweyni">Freweyni</option>
+                <option value = "Gambela">Gambela</option>
+                <option value = "Gelemso">Gelemso</option>
+                <option value = "Ghimbi">Ghimbi</option>
+                <option value = "Ginir">Ginir</option>
+                <option value = "Goba">Goba</option>
+                <option value = "Gode">Gode</option>
+                <option value = "Gonder">Gondar</option>
+                <option value = "Gongoma">Gongoma</option>
+                <option value = "Gore">Gore</option>
+                <option value = "Gorgora">Gorgora</option>
+                <option value = "Harar">Harar</option>
+                <option value = "Hayq">Hayq</option>
+                <option value = "Holeta">Holeta</option>
+                <option value = "Hosaena">Hosaena</option>
+                <option value = "Humera">Humera</option>
+                <option value = "Imi">Imi</option>
+                <option value = "Jijiga">Jijiga</option>
+                <option value = "Jimma">Jimma</option>
+                <option value = "Jinka">Jinka</option>
+                <option value = "Kabri Dar">Kabri Dar</option>
+                <option value = "Kebri Mangest">Kebri Mangest</option>
+                <option value = "Kobo">Kobo</option>
+                <option value = "Kombolcha">Kombolcha</option>
+                <option value = "Konso">Konso</option>
+                <option value = "Kulubi">Kulubi</option>
+                <option value = "Lalibela">Lalibela</option>
+                <option value = "Limmu Genet">Limmu Genet</option>
+                <option value = "Maji">Maji</option>
+                <option value = "Maychew">Maychew</option>
+                <option value = "Mek'ele">Mek'ele</option>
+                <option value = "Mendi">Mendi</option>
+                <option value = "Metemma">Metemma</option>
+                <option value = "Metu">Metu</option>
+                <option value = "Mizan Teferi">Mizan Teferi</option>
+                <option value = "Mojo">Mojo</option>
+                <option value = "Mota">Mota</option>
+                <option value = "Moyale">Moyale</option>
+                <option value = "Negash">Negash</option>
+                <option value = "Negele Boran">Negele Boran</option>
+                <option value = "Nekemte">Nekemte</option>
+                <option value = "Shashamane">Shashamane</option>
+                <option value ="Shire">Shire</option>
+                <option value = "Shilavo">Shilavo</option>
+                <option value = "Sodo">Sodo</option>
+                <option value = "Sodore">Sodore</option>
+                <option value = "Sokoru">Sokoru</option>
+                <option value = "Tefki">Tefki</option>
+                <option value = "Tenta">Tenta</option>
+                <option value ="Tiya">Tiya</option>
+                <option value = "Tullu Melki">Tullu Melki</option>
+                <option value = "Turmi">Turmi</option>
+                <option value = "Wacca">Wacca</option>
+                <option value = "Walwal">Walwal</option>
+                <option value = "Werder">Werder</option>
+                <option value = "Wereta">Wereta</option>
+                <option value = "Woldia">Woldia</option>
+                <option value = "Wolaita Sodo">Wolaita Sodo </option>
+                <option value = "Waliso">Waliso</option>
+                <option value = "Wolleka">Wolleka</option>
+                <option value = "Wuchale">Wuchale</option>
+                <option value = "Ziway">Ziway</option>
+	          </select>
+	        </label>
+	      </div>
+				<div class="col-3">
+	        <label>
+	          PROFILE PICTURE 
+	          <input placeholder="do you want a profile photo?" type="file" name="profilePhoto"/>
+	        </label>
+	      </div>	      
+	      <div class="col-submit">
+	        <button class="submitbtn">Submit Form</button>
+	      </div>
+	      
+				
+				
+	      </form>
+
+    </div>
+    
+        
+        
+        
+           
+    
+    
+     
+<!-- hidden forms for login and sign up -->    
+ 
+
+
+
+</body>
+
+</html>
+        
+        
+        
+    

@@ -1,0 +1,261 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../images/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header {
+    margin: 0 auto;
+    padding: 0.2em 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+h1{
+    padding-bottom: 0.2em;
+    border-bottom: 1px #cdcdcd solid;
+    text-align: center;
+}
+
+#welcome-content {
+    width: 80%;
+    margin: 0 auto 0.1em auto;
+    
+}
+
+@media (max-width:760px) {
+  #welcome-content {
+      width: 100%;
+  } 
+}
+
+#welcome-message {
+    width: 80%;
+    margin: 0 auto 0.1em auto;
+    text-align: center;
+    padding: 0.1em 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+footer {
+    clear: both;
+}
+
+p.small {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button {
+    padding: 0.6em 4em;
+    background-color: crimson;
+    color: #f4f4f4;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+#buttons {
+    width: 80%;
+    margin: 0 auto 1em auto;
+    text-align: center;
+    padding: 0;
+}
+
+
+
+
+#join-now, #log-in {
+    width: 50%;
+    float: left;
+}
+
+@media (max-width:760px){
+   #join-now, #log-in {
+    width: 100%;
+    float: left;
+} 
+
+}
+
+label {
+    display: block;
+    
+    width: 12em;
+    text-align: left;
+    margin-right: .5em;
+    font-weight: 600;
+
+}
+
+input,select {
+    width: 26em;
+    height: 2.5em;
+    border: 1px solid #ddd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 560;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+    text-indent: 10px;
+    margin-bottom: 16px;
+}
+
+input[type="radio"]{
+    width: 2em;
+    height: 2em;
+    box-shadow: none;
+}
+
+
+input[type="submit"] {
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1em auto;
+    width: 60%;
+    margin-left: 13%;
+    background-color: #005000;
+    text-align: center;
+    text-indent: 0;
+}
+
+ul{
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    margin: 6px auto;
+    width: 80%; 
+}
+
+@media (max-width:760px){
+    li{
+        width: 100%;
+    }
+    input,select{
+        width: 18em;
+    }
+}
+
+
+
+form {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: .2em .2em .5em #999;
+    border:1px solid #cdcdcd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    
+}
+
+form h1{
+    width: 80%;
+    margin: 1em auto;
+    padding-bottom: 0.2em;
+    border-bottom: 1px #cdcdcd solid;
+    text-align: center;
+}
+
+#login-form, #signup-form {
+    display: none;
+}
+
+#login-form, #signup-form{
+    position: absolute;
+    width: 80%;
+    top: 80px;
+    left: 10%;
+}    
+
+#signup-form form{
+    width: 42em;
+}
+
+#login-form form{
+    width: 38em;
+}
+
+@media (max-width:760px){
+    #login-form, #signup-form{
+        width: 100%;
+        left: 0%;
+    }
+
+    #signup-form form,#login-form form{
+    width: 100%;
+    }
+
+}
+
+.x {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: #f9f9f9;
+    padding: 0.2em 1.2em;
+    border-left: 2px #ddd solid;
+    border-bottom: 2px #ddd solid;
+    font-weight: 700;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.x:hover {
+    background-color: #cb0000;
+    color: white;
+}
+
+footer{
+    position: relative;
+    display: block;
+    margin-top: 40px;
+   
+}
+
+small a, small p{
+    display: inline;
+       
+}
+
+small p{
+    position: absolute;
+    right: -60px;
+    top: 40px;
+}
+
+#description{
+    clear: both;
+    float: left;
+    width: 30%;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+#description h3{
+    background-color: blue;
+    text-align: center;
+}
+
+#description ul{
+    list-style-type: disc;
+
+}
+
+#description li{
+    width: 12em;
+}

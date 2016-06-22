@@ -1,0 +1,92 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+div.postForm{
+    width: 30em;
+    margin: 8px 0;
+    
+}
+input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 560;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+    
+}
+
+input[type="submit"]{
+    padding: 0.3em 1.4em;
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: none;
+    margin-left: 6.0em;
+    border: none;
+}
+
+textarea{
+    box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 6px;
+    box-shadow: none;
+    width:100%;
+}
+
+/*post message*/
+.postMessage{
+    width: 100%;
+    border: 1px #cdcdcd solid;
+    border-radius: 3px;
+    padding: 6px;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+    background-color: #f4f4f4;
+}
+
+.postMessage img{
+    width: 36em;
+    margin-top: 0.6em;
+}
+
+.postMessage a{
+    text-decoration: none;
+    padding: 8px;
+}
+
+span.time{
+    font-size: 12px;
+    float: right;
+}
+
+a.like{
+    padding: 0.2em 1.4em;
+    background-color: dodgerblue;
+    color: white;
+    position: relative;
+    top: -6px;
+}
+
+span.like{
+    float: right;
+    font-size: 14px;
+}
+
+a.more{
+    display:block;
+    width: 18em;
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.6em auto;
+    padding: 0.4em 0;
+    border-radius: 3px;
+}
+
+/*message css*/
+.normalMessage{
+    width: 75%;
+}
+

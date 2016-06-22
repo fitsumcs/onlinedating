@@ -1,0 +1,62 @@
+.tabs{
+    list-style-type: none;
+    margin: 0.4em 0 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+.tabs li {
+    float: left;
+    margin-right: 1px;
+    
+}
+
+li.active {
+    font-size:18px;
+}
+
+.tabs li a:link, .tabs li a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.tabs li a:hover, .tabs li a:active {
+    background-color: #7A991A;
+}
+
+.table{
+   width: 102.6%;
+   border-collapse: collapse;
+   border-left: 1px solid #dddddd;
+   border-right: 1px solid #dddddd;
+   border-bottom: 1px solid #dddddd; 
+   line-height: 3em;
+}
+
+.table tr:nth-child(even){
+    background-color: #f4f4f4;
+}
+
+.table tr{
+    border: 1px solid #cdcdcd;
+}
+
+.table td{
+    border-top: 1px solid #ddd;
+}
+
+.table td:nth-child(1){
+    width: 30%;
+    font-weight: 600;
+    text-indent: 10px;
+}
